@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#eee4d5">
+<meta name="description" content="A vintage little archive of films, feelings and favourite scenes.">
+<title>cine archive ♡</title>
+<style>
+:root{--paper:#eee4d5;--paper2:#f8f2e8;--ink:#49382d;--muted:#8b7767;--line:#d5c4b0;--accent:#956d51;--dark:#604a39}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7;background-image:radial-gradient(#bda99055 .65px,transparent .65px);background-size:12px 12px}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.shell{width:min(1020px,calc(100% - 30px));margin:25px auto 55px;border:1px solid var(--line);background:#eee4d5e8;padding:clamp(14px,3vw,30px);box-shadow:0 8px 35px #604a3910}
+.topline{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:.72rem;letter-spacing:.13em;text-transform:uppercase;border-bottom:1px solid var(--line);padding-bottom:12px}
+header{text-align:center;padding:40px 10px 30px}
+.ornament{color:var(--accent);letter-spacing:.4em;font-size:1.1rem}
+h1{font-size:clamp(2.7rem,8vw,5.3rem);font-weight:normal;letter-spacing:-.075em;line-height:1;margin:17px 0 13px}
+.subtitle{font-style:italic;color:var(--muted);font-size:1rem}
+nav{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:13px 6px;font-size:.88rem}
+nav a{color:var(--ink);letter-spacing:.04em}
+.intro{max-width:630px;text-align:center;margin:34px auto 42px;padding:0 8px}
+.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.17em;font-size:.72rem}
+.intro p{margin:9px 0}
+.section-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding-bottom:9px;margin:38px 0 19px}
+h2{font-weight:normal;font-size:1.5rem;margin:0}
+.section-head small{color:var(--muted);font-style:italic;font-size:.82rem}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}
+.film{background:var(--paper2);border:1px solid var(--line);padding:10px;box-shadow:0 4px 14px #49382d0a}
+.poster{aspect-ratio:3/4;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:17px;color:#f8f0e4;background:linear-gradient(145deg,#9b795b,#45382f)}
+.poster:before{content:"";position:absolute;inset:9px;border:1px solid #f8f0e488}
+.poster:after{content:"✦";position:absolute;bottom:17px;font-size:.8rem;color:#f8f0e4b8}
+.poster span{position:relative;font-size:clamp(1rem,2vw,1.45rem);line-height:1.25;text-shadow:0 2px 8px #20171155}
+.pink{background:linear-gradient(145deg,#c3a18d,#77594d)}.plum{background:linear-gradient(145deg,#88746b,#3e3435)}.cream{background:linear-gradient(145deg,#c7b18c,#78644d)}.blue{background:linear-gradient(145deg,#8e9a94,#4e5a52)}.green{background:linear-gradient(145deg,#a5a185,#62634b)}.rust{background:linear-gradient(145deg,#b17a59,#694332)}
+.film h3{font-weight:normal;font-size:1rem;line-height:1.35;margin:11px 2px 3px}
+.film p{font-size:.81rem;color:var(--muted);margin:0 2px 7px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:2px;padding:1px 7px;font-size:.68rem;color:var(--muted);margin:4px 3px 0 0}
+.note{background:#e5d7c5;border:1px dashed #bca58c;padding:21px;text-align:center;margin:35px 0}
+.note p{margin:4px 0;font-size:.92rem}
+.columns{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.paper-card{background:var(--paper2);border:1px solid var(--line);padding:20px}
+.paper-card h3{font-weight:normal;margin:0 0 7px}
+.paper-card p{font-size:.9rem;color:var(--muted);margin:0}
+footer{text-align:center;border-top:1px solid var(--line);margin-top:45px;padding:20px 8px 0;color:var(--muted);font-size:.82rem}
+@media(max-width:680px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.columns{grid-template-columns:1fr}header{padding-top:32px}.section-head small{max-width:45%;text-align:right}}
+@media(max-width:390px){.shell{width:calc(100% - 16px);padding:12px}.topline{font-size:.61rem}.poster{padding:12px}.film{padding:7px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <div class="topline"><span>a little film archive</span><span>est. 2026 · ♡</span></div>
+  <header id="home">
+    <div class="ornament">✳ ｡˚ ⋆</div>
+    <h1>cine archive</h1>
+    <div class="subtitle">a love letter to the films that stay</div>
+  </header>
+  <nav aria-label="Main navigation">
+    <a href="#home">home</a><a href="#films">film diary</a><a href="#watchlist">watchlist</a><a href="#about">about</a>
+  </nav>
+  <main>
+    <section class="intro">
+      <div class="kicker">— welcome, lovely —</div>
+      <p>an ever-growing collection of stories, scenes, and little moments that feel like they belong to me.</p>
+      <p>here you'll find films i love, films i want to see, and the ones that leave me staring at the credits long after the screen goes dark.</p>
+      <div class="ornament">❧</div>
+    </section>
+
+    <section id="films">
+      <div class="section-head"><h2>✧ the film diary</h2><small>favourites & forever rewatches</small></div>
+      <div class="grid">
+        <article class="film"><div class="poster pink"><span>the perks<br>of being a<br>wallflower</span></div><h3>The Perks of Being a Wallflower</h3><p>for the ones who feel everything</p><span class="tag">comfort film</span><span class="tag">coming-of-age</span></article>
+        <article class="film"><div class="poster plum"><span>girl,<br>interrupted</span></div><h3>Girl, Interrupted</h3><p>complicated, human, unforgettable</p><span class="tag">drama</span><span class="tag">rewatch</span></article>
+        <article class="film"><div class="poster cream"><span>the<br>goldfinch</span></div><h3>The Goldfinch</h3><p>beautiful frames and a lingering feeling</p><span class="tag">cinematography</span></article>
+        <article class="film"><div class="poster blue"><span>dead poets<br>society</span></div><h3>Dead Poets Society</h3><p>stories that make you look at life differently</p><span class="tag">classic</span></article>
+        <article class="film"><div class="poster green"><span>little<br>women</span></div><h3>Little Women</h3><p>warm light, old books, and big dreams</p><span class="tag">period drama</span></article>
+        <article class="film"><div class="poster rust"><span>somewhere<br>in time</span></div><h3>Next up in the archive</h3><p>swap this card for a film you discover</p><span class="tag">your pick</span></article>
+      </div>
+    </section>
+
+    <section class="note" id="watchlist">
+      <div class="ornament">❦</div>
+      <h2>the watchlist</h2>
+      <p>films waiting for a rainy afternoon, a late night, or the right kind of mood.</p>
+      <p><em>add your next three films here ♡</em></p>
+    </section>
+
+    <section id="about">
+      <div class="section-head"><h2>✧ behind the archive</h2><small>a little note from me</small></div>
+      <div class="columns">
+        <div class="paper-card"><h3>hello, film lovers ♡</h3><p>this is my little corner of the internet for the films i adore, the scenes i replay in my head, and the stories that make ordinary days feel cinematic.</p></div>
+        <div class="paper-card"><h3>film recommendations?</h3><p>i'm always looking for something beautiful, strange, moving, or unforgettable. add your contact link here when you're ready to share it.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer><div>✧ cine archive ✧</div><div>made with love and a little film grain.</div><p><a href="#home">back to the top ↑</a></p></footer>
+</div>
+</body>
+</html>
